@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dakar Délices</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; color: #302820; background: #fffaf3; }
+    header { min-height: 72vh; padding: 24px 8%; color: white; background: linear-gradient(120deg, #221a13e8, #a84c18d9), url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80") center/cover; }
+    nav { display: flex; justify-content: space-between; align-items: center; }
+    nav strong { font-size: 24px; color: #ffd27d; }
+    nav a { margin-left: 24px; color: white; text-decoration: none; }
+    .hero { max-width: 650px; padding-top: 14vh; }
+    h1 { margin: 0 0 14px; font-size: clamp(42px, 7vw, 76px); }
+    .hero p { max-width: 530px; font-size: 19px; line-height: 1.6; }
+    .button { display: inline-block; margin-top: 18px; padding: 13px 20px; border-radius: 6px; color: #2e1b0c; background: #ffd27d; font-weight: bold; text-decoration: none; }
+    section { padding: 64px 8%; }
+    h2 { margin-top: 0; font-size: 32px; color: #8b3e15; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .card { padding: 24px; border-radius: 12px; background: white; box-shadow: 0 8px 28px #5e351514; }
+    .price { color: #a84c18; font-weight: bold; }
+    .contact { color: white; background: #8b3e15; }
+    footer { padding: 20px 8%; text-align: center; }
+    @media (max-width: 700px) {
+      nav div { display: none; }
+      .cards { grid-template-columns: 1fr; }
+      header { min-height: 64vh; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <strong>Dakar Délices</strong>
+      <div><a href="#menu">Menu</a><a href="#contact">Contact</a></div>
+    </nav>
+    <div class="hero">
+      <h1>La cuisine sénégalaise, simplement généreuse.</h1>
+      <p>Des plats faits maison, des produits frais et toute la chaleur de Dakar dans votre assiette.</p>
+      <a class="button" href="#contact">Réserver une table</a>
+    </div>
+  </header>
+  <section id="menu">
+    <h2>Nos incontournables</h2>
+    <div class="cards">
+      <article class="card"><h3>Thiéboudienne</h3><p>Riz au poisson, légumes et sauce maison.</p><span class="price">4 500 FCFA</span></article>
+      <article class="card"><h3>Poulet Yassa</h3><p>Poulet mariné, oignons fondants et riz parfumé.</p><span class="price">4 000 FCFA</span></article>
+      <article class="card"><h3>Mafé</h3><p>Viande tendre et sauce onctueuse à l'arachide.</p><span class="price">4 500 FCFA</span></article>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <h2 style="color:white">Réservez votre moment</h2>
+    <p>Dakar, Sénégal · Ouvert du lundi au samedi · Téléphone : +221 XX XXX XX XX</p>
+  </section>
+  <footer>Projet personnel de démonstration — Gassama Moussa</footer>
+</body>
+</html>

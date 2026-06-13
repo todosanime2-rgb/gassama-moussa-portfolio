@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Gassama Moussa, développeur web junior à Paris.">
+  <title>Gassama Moussa | Développeur Web Junior</title>
+  <style>
+    :root {
+      --navy: #0d2845;
+      --blue: #168bc4;
+      --light: #eff8fc;
+      --text: #213448;
+      --muted: #60758a;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--text); font-family: Arial, sans-serif; background: var(--white); }
+    a { color: inherit; }
+    header { min-height: 82vh; padding: 24px 8%; color: white; background: radial-gradient(circle at top right, #1d7aa8, var(--navy) 58%); }
+    nav { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    nav strong { font-size: 21px; }
+    nav div { display: flex; gap: 22px; }
+    nav a { color: #d9f3ff; text-decoration: none; }
+    .hero { max-width: 840px; padding-top: 15vh; }
+    .eyebrow { color: #78d6ff; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; }
+    h1 { margin: 18px 0; font-size: clamp(44px, 8vw, 84px); line-height: 1.02; }
+    .lead { max-width: 680px; color: #dceef7; font-size: 20px; line-height: 1.6; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .button { display: inline-block; padding: 14px 20px; border: 1px solid #78d6ff; border-radius: 7px; color: var(--navy); background: #78d6ff; font-weight: bold; text-decoration: none; }
+    .button.secondary { color: white; background: transparent; }
+    section { padding: 72px 8%; }
+    section:nth-child(even) { background: var(--light); }
+    .section-head { max-width: 720px; margin-bottom: 34px; }
+    h2 { margin: 0 0 12px; color: var(--navy); font-size: 35px; }
+    .section-head p { color: var(--muted); font-size: 17px; line-height: 1.6; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .card { overflow: hidden; border: 1px solid #d5e8f2; border-radius: 14px; background: white; box-shadow: 0 14px 36px #102a4710; }
+    .card img { display: block; width: 100%; aspect-ratio: 16/9; object-fit: cover; object-position: top; }
+    .card-body { padding: 24px; }
+    .card h3 { margin: 0 0 8px; color: var(--navy); font-size: 23px; }
+    .card p { color: var(--muted); line-height: 1.55; }
+    .card a { color: #0879b1; font-weight: bold; text-decoration: none; }
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skill { padding: 9px 12px; border-radius: 999px; color: #07537a; background: #dff4fe; font-weight: bold; }
+    .contact { color: white; text-align: center; background: var(--navy) !important; }
+    .contact h2 { color: white; }
+    .contact p { color: #dceef7; font-size: 18px; }
+    footer { padding: 22px; color: var(--muted); text-align: center; }
+    @media (max-width: 760px) {
+      header, section { padding-left: 6%; padding-right: 6%; }
+      nav div { display: none; }
+      .grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 12vh; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <strong>Gassama Moussa</strong>
+      <div><a href="#projets">Projets</a><a href="#competences">Compétences</a><a href="#contact">Contact</a></div>
+    </nav>
+    <div class="hero">
+      <div class="eyebrow">Développeur web junior · Paris</div>
+      <h1>Je crée des pages web claires, modernes et adaptées aux mobiles.</h1>
+      <p class="lead">Autodidacte sérieux et motivé, je développe des solutions digitales pratiques pour présenter une activité et faciliter le contact avec ses clients.</p>
+      <div class="actions">
+        <a class="button" href="#projets">Découvrir mes projets</a>
+        <a class="button secondary" href="cv-gassama-moussa.pdf" download>Télécharger mon CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="projets">
+      <div class="section-head">
+        <h2>Projets sélectionnés</h2>
+        <p>Deux projets personnels conçus pour démontrer ma capacité à créer des interfaces professionnelles, responsives et orientées vers les besoins d'une entreprise.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img src="projet-dakar-delices-preview.png" alt="Aperçu du site Dakar Délices">
+          <div class="card-body">
+            <h3>Dakar Délices</h3>
+            <p>Site vitrine responsive pour un restaurant sénégalais, avec présentation du menu et appel à la réservation.</p>
+            <a href="dakar-delices/index.html">Voir le projet →</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="projet-moussa-digital-preview.png" alt="Aperçu du site Moussa Digital">
+          <div class="card-body">
+            <h3>Moussa Digital</h3>
+            <p>Landing page de services web, structurée pour présenter une offre et convertir les visiteurs en contacts.</p>
+            <a href="moussa-digital/index.html">Voir le projet →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="competences">
+      <div class="section-head">
+        <h2>Compétences</h2>
+        <p>Compétences développées par la pratique et la réalisation de projets personnels.</p>
+      </div>
+      <div class="skills">
+        <span class="skill">HTML5</span>
+        <span class="skill">CSS3</span>
+        <span class="skill">Responsive design</span>
+        <span class="skill">SEO de base</span>
+        <span class="skill">Canva</span>
+        <span class="skill">Outils IA</span>
+        <span class="skill">Gestion de contenu</span>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Parlons de votre projet</h2>
+      <p>Disponible à distance, à Paris et mobile selon les besoins.</p>
+      <div class="actions" style="justify-content:center">
+        <a class="button" href="mailto:todosanime2@gmail.com">todosanime2@gmail.com</a>
+        <a class="button secondary" href="tel:+221771708248">+221 77 170 82 48</a>
+      </div>
+    </section>
+  </main>
+  <footer>© 2026 Gassama Moussa · Français et espagnol courants</footer>
+</body>
+</html>
